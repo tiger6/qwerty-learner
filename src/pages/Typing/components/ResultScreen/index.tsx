@@ -25,7 +25,7 @@ import { useNavigate } from 'react-router-dom'
 import IexportWords from '~icons/icon-park-outline/excel'
 import IconCoffee from '~icons/mdi/coffee'
 import IconXiaoHongShu from '~icons/my-icons/xiaohongshu'
-import IconGithub from '~icons/simple-icons/github'
+import IconGlobe from '~icons/ri/global-line'
 import IconWechat from '~icons/simple-icons/wechat'
 import IconX from '~icons/tabler/x'
 
@@ -242,48 +242,15 @@ const ResultScreen = () => {
                 </div>
               </div>
               <div className="ml-2 flex flex-col items-center justify-end gap-3 text-xl">
-                <AuthorButton />
                 {!isReviewMode && (
                   <>
                     <ShareButton />
                     <IexportWords fontSize={18} className="cursor-pointer text-gray-500" onClick={exportWords}></IexportWords>
                   </>
                 )}
-                <IconXiaoHongShu
-                  fontSize={15}
-                  className="cursor-pointer text-gray-500 hover:text-red-500 focus:outline-none"
-                  onClick={(e) => {
-                    handleOpenInfoPanel('redBook')
-                    e.currentTarget.blur()
-                  }}
-                />
 
-                <button
-                  onClick={(e) => {
-                    handleOpenInfoPanel('donate')
-                    e.currentTarget.blur()
-                  }}
-                  className="cursor-pointer"
-                  type="button"
-                  title="捐赠我们的项目"
-                >
-                  <IconCoffee fontSize={17} className={`text-gray-500 hover:text-amber-500  focus:outline-none ${styles.imgShake}`} />
-                </button>
-
-                <button
-                  onClick={(e) => {
-                    handleOpenInfoPanel('community')
-                    e.currentTarget.blur()
-                  }}
-                  className="cursor-pointer text-gray-500 dark:text-gray-400"
-                  type="button"
-                  title="加入我们的社区"
-                >
-                  <IconWechat fontSize={16} className="text-gray-500 hover:text-green-500 focus:outline-none" />
-                </button>
-
-                <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" className="leading-[0px]">
-                  <IconGithub fontSize={16} className="text-gray-500 hover:text-green-800 focus:outline-none" />
+                <a href="https://tigerfuye.com" target="_blank" rel="noreferrer" aria-label="前往站长主页" className="leading-[0px]">
+                  <IconGlobe fontSize={16} className="text-gray-500 hover:text-indigo-500 focus:outline-none" />
                 </a>
               </div>
             </div>
