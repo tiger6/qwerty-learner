@@ -13,6 +13,7 @@ import { useNavigate } from 'react-router-dom'
 import IconMail from '~icons/material-symbols/mail'
 import IconCoffee2 from '~icons/mdi/coffee'
 import IconXiaoHongShu from '~icons/my-icons/xiaohongshu'
+import IconGlobe from '~icons/ri/global-line'
 import RiLinksLine from '~icons/ri/links-line'
 import IconTwitter from '~icons/ri/twitter-fill'
 import IconGithub from '~icons/simple-icons/github'
@@ -69,6 +70,10 @@ const Footer: React.FC = () => {
       <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2.5 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" aria-label="前往 GitHub 项目主页">
           <IconGithub fontSize={15} className="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100" />
+        </a>
+
+        <a href="https://tigerfuye.com" target="_blank" rel="noreferrer" aria-label="前往站长主页">
+          <IconGlobe fontSize={15} className="text-gray-500 hover:text-indigo-500 dark:text-gray-400 dark:hover:text-indigo-400" />
         </a>
 
         <button
